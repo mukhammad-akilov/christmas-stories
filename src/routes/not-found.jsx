@@ -1,6 +1,8 @@
+import NotFound from "../components/NotFound/NotFound";
+
 const NotFoundRoute = () => {
     return (
-        <div></div>
+        <NotFound />
     );
 }
 export default NotFoundRoute;

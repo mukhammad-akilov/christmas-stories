@@ -8,7 +8,6 @@ import {useSelector} from "react-redux";
 import './App.scss';
 // Global components
 import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 // Snowfall
 import Snowfall from "react-snowfall";
@@ -16,9 +15,11 @@ import ConfirmAudioModal from "./components/ConfrimAudioModal/ConfirmAudioModal"
 // Howler
 import christmasMusic from "./assets/music/christmas.mp3";
 import {Howl} from "howler";
-// Pages
-import ChristmasStoriesList from "./components/ChristmasStoriesList/ChristmasStoriesList";
-import NotFound from "./components/NotFound/NotFound";
+// Routes
+import ChristmasStoriesRoute from "./routes/christmas-stories";
+import ChristmasStoryRoute from "./routes/christmas-story";
+import HomeRoute from "./routes/home";
+import NotFoundRoute from "./routes/not-found";
 
 let christmasSoundHowler = null;
 
@@ -66,14 +67,16 @@ const App = () => {
               <div id="app" className={`app`}>
                   <Header/>
                   <Routes>
-                      <Route path="/" element={<Home />} />
-                      <Route path="/christmas-stories" element={<ChristmasStoriesList />} />
-                      <Route path="/test2" element={<Home />} />
-                      <Route path="*" element={<NotFound />} />
+                      <Route path="/" element={<HomeRoute />} />
+                      <Route path="/christmas-stories" element={<ChristmasStoriesRoute />} />
+                      <Route path="/christmas-stories/:christmasStoryId"  element={<ChristmasStoryRoute />} />
+                      <Route path="*" element={<NotFoundRoute />} />
                   </Routes>
                   <Footer />
               </div>
-              <Snowfall />
+              <Snowfall
+              style={{zIndex: 5000}}
+              />
               <ConfirmAudioModal
                   open={!acceptAudio}
                   onClose={() => setAcceptAudio(true)}

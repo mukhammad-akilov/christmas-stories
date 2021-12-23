@@ -1,6 +1,8 @@
-const ChristmasStoriesRouter = () => {
+import ChristmasStoriesList from "../components/ChristmasStoriesList/ChristmasStoriesList";
+
+const ChristmasStoriesRoute = () => {
     return (
-        <div></div>
+       <ChristmasStoriesList />
     );
 }
-export default ChristmasStoriesRouter;
+export default ChristmasStoriesRoute;

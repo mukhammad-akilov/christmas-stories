@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+
+.contentContainer {
+  > .title {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .storiesContainer {
+    .storyContainer {
+      margin-bottom: 1.5rem;
+
+        .title {
+          color: $light-text-color;
+          margin: 0;
+          font-size: 2rem;
+        }
+    }
+  }
+}
