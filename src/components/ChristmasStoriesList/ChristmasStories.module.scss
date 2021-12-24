@@ -10,11 +10,19 @@
     .storyContainer {
       margin-bottom: 1.5rem;
 
+      .link {
+        color: $light-text-color;
+
         .title {
-          color: $light-text-color;
+          color: inherit;
           margin: 0;
           font-size: 2rem;
         }
+      }
+
+      .linkDark {
+        color: $dark-text-color;
+      }
     }
   }
 }

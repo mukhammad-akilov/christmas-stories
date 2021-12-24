@@ -69,7 +69,7 @@ const App = () => {
                   <Routes>
                       <Route path="/" element={<HomeRoute />} />
                       <Route path="/christmas-stories" element={<ChristmasStoriesRoute />} />
-                      <Route path="/christmas-stories/:christmasStoryId"  element={<ChristmasStoryRoute />} />
+                      <Route path="/christmas-stories/:christmasStorySlug"  element={<ChristmasStoryRoute />} />
                       <Route path="*" element={<NotFoundRoute />} />
                   </Routes>
                   <Footer />
