@@ -1,0 +1,19 @@
+.contentContainer {
+  > .title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .descriptionContainer {
+    font-size: 1.5rem;
+
+    img {
+      margin: auto;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

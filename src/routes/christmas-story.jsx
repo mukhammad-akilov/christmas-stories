@@ -5,7 +5,7 @@ const ChristmasStoryRoute = () => {
     const params = useParams();
 
     return (
-        <ChristmasStory slug={params.christmasStoryId} />
+        <ChristmasStory storySlug={params.christmasStorySlug} />
     );
 }
 export default ChristmasStoryRoute;

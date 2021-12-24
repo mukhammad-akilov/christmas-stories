@@ -20,7 +20,7 @@ const Home = () => {
                 <CountDownTimer />
             </div>
             <div className={styles.introDescriptionContainer}>
-                <h2 className={`${styles.title}`}>Welcome to Christmas Stories</h2>
+                <h2 className={`${styles.title}`}>Dou you really want some Christmas Stories? 🎅🏽</h2>
                 <Link to="/christmas-stories" className={styles.linkToStories}>Let's read the stories!</Link>
             </div>
         </div>

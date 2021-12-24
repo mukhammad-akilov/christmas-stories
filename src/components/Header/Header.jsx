@@ -1,6 +1,5 @@
 // Redux
-import {useDispatch} from "react-redux";
-import {stopMusic, playMusic} from "../../store/actions/musicActions";
+import {useSelector} from "react-redux";
 // Theme toggler
 import ThemeToggler from "../ThemeToggler/ThemeToggler";
 import MusicMuteHandler from "../MusicMuteHandler/MusicMuteHandler";
@@ -13,10 +12,12 @@ import styles from "./Header.module.scss"
 import {Link} from "react-router-dom";
 
 const Header = () => {
-    const dispatch = useDispatch();
+    const themeState = useSelector(state => state.theme);
 
     return (
-        <header className={styles.header}>
+        <header
+            className={`${styles.header} ${styles.headerShadow} ${themeState.theme === "dark" ? styles.headerDark : ""}`}
+        >
             <div className={`container ${styles.headerContainer}`}>
                 <Link
                     to="/"

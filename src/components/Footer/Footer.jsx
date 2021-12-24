@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <div className="container">
-                Footer info
+                All rights reserved. I guess so 😜 {new Date().getFullYear()}
             </div>
         </footer>
     );
