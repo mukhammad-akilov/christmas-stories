@@ -1,3 +1,5 @@
+// React
+import {useState, useEffect} from "react";
 // Redux
 import {useSelector} from "react-redux";
 // Theme toggler
@@ -13,10 +15,25 @@ import {Link} from "react-router-dom";
 
 const Header = () => {
     const themeState = useSelector(state => state.theme);
+    const [scrollDistance, setScrollDistance] = useState(0);
+
+    useEffect(() => {
+        const getScrollDistance = event => {
+            const scrollDistance = document.documentElement.scrollTop;
+            setScrollDistance(scrollDistance);
+            console.log("Nigina", scrollDistance);
+        }
+
+        window.addEventListener("scroll", getScrollDistance);
+        getScrollDistance();
+        return () => {
+            window.removeEventListener("scroll", getScrollDistance);
+        }
+    }, [])
 
     return (
         <header
-            className={`${styles.header} ${styles.headerShadow} ${themeState.theme === "dark" ? styles.headerDark : ""}`}
+            className={`${styles.header} ${themeState.theme === "dark" ? styles.headerDark : ""} ${scrollDistance > 30 ? styles.headerShadow : ""}`}
         >
             <div className={`container ${styles.headerContainer}`}>
                 <Link

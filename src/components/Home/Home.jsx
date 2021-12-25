@@ -1,8 +1,14 @@
+import {useEffect} from "react";
 import styles from "./Home.module.scss";
 import CountDownTimer from "../CoundDownTimer/CountDownTimer";
 import {Link} from "react-router-dom";
+import {projectTitle} from "../../config";
 
 const Home = () => {
+    useEffect(() => {
+        // Set page title
+        document.title = `${projectTitle}`;
+    }, [])
     return (
         <div className={`container ${styles.contentContainer}`}>
             <h1 className={`christmasFont ${styles.title}`}>Christmas Stories</h1>

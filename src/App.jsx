@@ -6,9 +6,11 @@ import {Route, Routes} from "react-router-dom";
 import {useSelector} from "react-redux";
 // Global styles
 import './App.scss';
+import {darkBackgroundColor, lightBackgroundColor} from "./config";
 // Global components
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Layout from "./components/Layout/Layout";
 // Snowfall
 import Snowfall from "react-snowfall";
 import ConfirmAudioModal from "./components/ConfrimAudioModal/ConfirmAudioModal";
@@ -30,12 +32,24 @@ const App = () => {
 
     useEffect(() => {
         const theme = themeState.theme;
+
+        // Create meta color tag
+        const metaColorTag = document.createElement("meta");
+        metaColorTag.setAttribute('name', 'theme-color');
+
         if (theme === "dark") {
             document.body.classList.add('dark-theme');
+            metaColorTag.content = darkBackgroundColor;
         } else {
             document.body.classList.remove('dark-theme');
+            metaColorTag.content = lightBackgroundColor;
         }
-   }, [themeState.theme]);
+        // Append meta tag color to header and delete if exists previous
+        if(document.querySelector(`meta[name="theme-color"]`)) {
+            document.querySelector(`meta[name="theme-color"]`).remove()
+        }
+        document.getElementsByTagName('head')[0].appendChild(metaColorTag);
+    }, [themeState.theme]);
 
     useEffect(() => {
         // Setup the new Howl
@@ -66,12 +80,14 @@ const App = () => {
           <>
               <div id="app" className={`app`}>
                   <Header/>
-                  <Routes>
-                      <Route path="/" element={<HomeRoute />} />
-                      <Route path="/christmas-stories" element={<ChristmasStoriesRoute />} />
-                      <Route path="/christmas-stories/:christmasStorySlug"  element={<ChristmasStoryRoute />} />
-                      <Route path="*" element={<NotFoundRoute />} />
-                  </Routes>
+                  <Layout>
+                      <Routes>
+                          <Route path="/" element={<HomeRoute />} />
+                          <Route path="/christmas-stories" element={<ChristmasStoriesRoute />} />
+                          <Route path="/christmas-stories/:christmasStorySlug"  element={<ChristmasStoryRoute />} />
+                          <Route path="*" element={<NotFoundRoute />} />
+                      </Routes>
+                  </Layout>
                   <Footer />
               </div>
               <Snowfall

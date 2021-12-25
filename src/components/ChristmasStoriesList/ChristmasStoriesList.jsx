@@ -1,11 +1,18 @@
+// React
+import {useEffect} from "react";
 // Redux
 import {useSelector} from "react-redux";
 import {christmasStoriesList} from "../../utils/utils";
 import {Link} from "react-router-dom";
 import styles from "./ChristmasStories.module.scss";
+import {projectTitle} from "../../config";
 
 const ChristmasStoriesList = () => {
     const themeState = useSelector(state => state.theme);
+    useEffect(() => {
+        // Set page title
+        document.title = `Christmas Stories list -  ${projectTitle}`;
+    }, [])
 
     return (
         <div className={`container ${styles.contentContainer}`}>
