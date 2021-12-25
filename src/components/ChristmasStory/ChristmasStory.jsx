@@ -3,6 +3,7 @@ import {useNavigate} from "react-router-dom";
 import PropTypes from 'prop-types';
 import styles from "./ChristmasStory.module.scss";
 import {christmasStoriesList} from "../../utils/utils";
+import {projectTitle} from "../../config";
 
 const ChristmasStory = ({storySlug, ...props}) => {
     const [selectedStory, setSelectedStory] = useState(null);
@@ -12,6 +13,8 @@ const ChristmasStory = ({storySlug, ...props}) => {
         const [filteredStory] = christmasStoriesList.filter(story => story.slug === storySlug);
         if (filteredStory) {
             setSelectedStory(filteredStory);
+            // Set page title
+            document.title = `${filteredStory.title} -  ${projectTitle}`;
         } else {
             // Redirect to 404 page
             navigate("/404", {replace: true});

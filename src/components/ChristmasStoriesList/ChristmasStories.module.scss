@@ -3,7 +3,11 @@
 .contentContainer {
   > .title {
     text-align: center;
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    @media (min-width: $grid-lg) {
+      font-size: 5rem;
+    }
   }
 
   .storiesContainer {

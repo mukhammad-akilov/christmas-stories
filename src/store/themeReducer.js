@@ -1,7 +1,14 @@
 import * as actions from "./actions/actionTypes";
 
+let themeMode = null;
+const isThemeMode = localStorage.getItem("website-theme-mode");
+
+if(isThemeMode) {
+    themeMode = JSON.parse(isThemeMode).value;
+}
+
 const  initialState = {
-    theme: "light",
+    theme: isThemeMode ? themeMode : "light",
 };
 
 const themeReducer = (state = initialState, action) => {
