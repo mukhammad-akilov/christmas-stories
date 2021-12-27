@@ -9,7 +9,10 @@ import {projectTitle} from "../../config";
 
 const ChristmasStoriesList = () => {
     const themeState = useSelector(state => state.theme);
+
     useEffect(() => {
+        // Scroll to top of page
+        window.scrollTo(0, 0);
         // Set page title
         document.title = `Christmas Stories list -  ${projectTitle}`;
     }, [])

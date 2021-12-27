@@ -508,7 +508,77 @@ export const christmasStoriesList = [
         id: 10,
         title: "\"Niginella. The story about a girl who looks like Anna From Frozen\" by Tom Hardy",
         slug: "niginella-the-story-about-a-girl-who-looks-like-anna-from-frozen-by-tom-hardy",
-        content: <>
+        content: <div className="lastChristmasStory">
+            <p>
+                Once upon a time there is a girl called Nigella who lives in planet called Earth. She lives in a castle in
+                4th floor and like others princess she likes to listen to music, watch kingdom movies, dancing and double decker red bus.
+            </p>
+            <p className="animationContainer">
+                <lottie-player
+                    src="https://assets1.lottiefiles.com/packages/lf20_kdyiibb3.json"
+                    background="transparent"
+                    speed="1"
+                    loop
+                    autoplay
+                />
+            </p>
+            <p>One day Niginella met a knight called Thomas Potter in kingdom market called FacebookBazar. Thomas was very pleased and encouraged to
+                see Niginella and asked for her profile in FacebookBazar. After that, they talked every day until nightfall and planned to eat pizza.
+                They met each other and ate delicious pizza. After a delicious pizza, they agreed to go to the festival called MegaKingdom Festival.
+            </p>
+            <h2 className="subTitle">MegaKingdom Festival</h2>
+            <p className="animationContainer">
+                <lottie-player
+                    src="https://assets10.lottiefiles.com/packages/lf20_6aYlBl.json"
+                    background="transparent"
+                    speed="1"
+                    loop
+                    autoplay
+                />
+            </p>
+            <p>
+                At the festival, Niginella invited her friends and successfully entered the festival through the security guards. There was a lot of delicious food at the festival, a lot of great songs. Niginella and Thomas danced to the cool music until the night.
+                After the festival, Niginella and Thomas agreed to eat delicious and juicy wings and watch a movie called Knight 007.
+            </p>
+            <h2 className="subTitle">Bad dragon</h2>
+            <p className="animationContainer">
+                <lottie-player
+                    src="https://assets7.lottiefiles.com/private_files/lf30_jaijxnez.json"
+                    background="transparent"
+                    speed="1"
+                    loop
+                    autoplay
+                />
+            </p>
+            <p>
+                Very bad things happened after a cool festival. The bad dragon kidnapped Niginella and took her to his castle. Then Thomas  shouted at the dragon:
+            </p>
+            <div className="textCenter mb-3">
+                <p className="princeWarning">
+                    - And if you hurt her, I wanna fight
+                    <br />
+                    -  But my hand's been broken, one too many times
+                    <br/>
+                    - So I'll use my sword to kill you at all
+                </p>
+            </div>
+            <p>
+                Thomas finally found the bad dragon and defeated him. Niginella was suuccessfully saved and now she can be with her family in New Year.
+            </p>
+            <p>
+                Thomas looked into her beautiful eyes and he was happy he could save her from the dragon.
+            </p>
+            <h2>
+                The last day of 2021 year
+            </h2>
+            <p>
+                There is the moring of the last day of 2021 year. On New Year's Eve, everyone eats dishes and salads, so everyone should wake up early and prepare for evening.
+                Finally Niginella waked up and ...
+            </p>
+            <p className="textCenter toBeContinued">
+                TO BE CONTINUED... <br/>
+                There is not any Christmas without this music :)
+            </p>
             <div className="video-container">
                 <iframe
                     src="https://www.youtube.com/embed/FuAHR4lkjCo"
@@ -518,6 +588,6 @@ export const christmasStoriesList = [
                     allowFullScreen
                 />
             </div>
-        </>
+        </div>
     }
 ]
