@@ -10,6 +10,7 @@
     background-color: $dark-background-color;
     cursor: pointer;
     width: 62px;
+    height: 30px;
     border: 2px solid $dark-background-color;
     position: relative;
     border-radius: 20px;
@@ -20,6 +21,7 @@
 
     img {
       width: 22px;
+      height: 22px;
     }
 
     .toggleIndicator {
