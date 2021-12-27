@@ -10,6 +10,8 @@ const ChristmasStory = ({storySlug, ...props}) => {
     const navigate = useNavigate();
 
     useEffect(() => {
+        // Scroll to top of page
+        window.scrollTo(0, 0);
         const [filteredStory] = christmasStoriesList.filter(story => story.slug === storySlug);
         if (filteredStory) {
             setSelectedStory(filteredStory);

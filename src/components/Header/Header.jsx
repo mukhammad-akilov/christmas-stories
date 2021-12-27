@@ -21,7 +21,6 @@ const Header = () => {
         const getScrollDistance = event => {
             const scrollDistance = document.documentElement.scrollTop;
             setScrollDistance(scrollDistance);
-            console.log("Nigina", scrollDistance);
         }
 
         window.addEventListener("scroll", getScrollDistance);
