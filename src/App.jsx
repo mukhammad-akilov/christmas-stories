@@ -40,9 +40,13 @@ const App = () => {
         if (theme === "dark") {
             document.body.classList.add('dark-theme');
             metaColorTag.content = darkBackgroundColor;
+            // Add color scheme CSS-property to HTML-tag
+            document.documentElement.style.colorScheme = "dark";
         } else {
             document.body.classList.remove('dark-theme');
             metaColorTag.content = lightBackgroundColor;
+            // Add color scheme CSS-property to HTML-tag
+            document.documentElement.style.colorScheme = "light";
         }
         // Append meta tag color to header and delete if exists previous
         if(document.querySelector(`meta[name="theme-color"]`)) {
