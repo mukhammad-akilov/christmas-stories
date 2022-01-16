@@ -2,6 +2,8 @@
 import {useEffect, useState} from "react";
 // React Router
 import {Route, Routes} from "react-router-dom";
+// Google Analytics
+import ReactGA from "react-ga4";
 // Redux
 import {useSelector} from "react-redux";
 // Global styles
@@ -29,6 +31,9 @@ const App = () => {
     const themeState = useSelector(state => state.theme);
     const musicState = useSelector(state => state.music);
     const [acceptAudio, setAcceptAudio] = useState(false);
+
+    // Google Analytics
+    ReactGA.initialize("G-XN8S38R7HZ");
 
     useEffect(() => {
         const theme = themeState.theme;
