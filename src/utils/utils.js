@@ -7,6 +7,7 @@ import story6Thumbnail from "../assets/images/story-6.jpg";
 import story7Thumbnail from "../assets/images/story-7.jpg";
 import story8Thumbnail from "../assets/images/story-8.jpg";
 import story9Thumbnail from "../assets/images/story-9.jpg";
+import story10Thumbnail from "../assets/images/story-10.jpg";
 
 export const christmasStoriesList = [
     {
@@ -572,11 +573,21 @@ export const christmasStoriesList = [
                 The last day of 2021 year
             </h2>
             <p>
-                There is the moring of the last day of 2021 year. On New Year's Eve, everyone eats dishes and salads, so everyone should wake up early and prepare for evening.
+                There is the morning of the last day of 2021 year. On New Year's Eve, everyone eats dishes and salads, so everyone should wake up early and prepare for evening.
                 Finally Niginella waked up and ...
             </p>
+            <h2>
+                31 December 2021
+            </h2>
+            <p>
+                <img src={story10Thumbnail} alt={this?.title} />
+            </p>
+            <p>
+                Children received gifts from Santa Claus and everyone was happy and satisfied 🙂
+            </p>
             <p className="textCenter toBeContinued">
-                TO BE CONTINUED... <br/>
+                THE END
+                <br/>
                 There is not any Christmas without this music :)
             </p>
             <div className="video-container">

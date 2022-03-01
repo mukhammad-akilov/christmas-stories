@@ -2,7 +2,10 @@ import {useState, useEffect} from "react";
 import {differenceInSeconds} from "date-fns";
 import styles from "./CountDownTimer.module.scss";
 
-const demoDayDate= new Date(2023, 0, 0, 0, 0, 0);
+const currentDate = new Date();
+const newYearDate= new Date(currentDate.getFullYear() + 1, 0, 0, 0, 0, 0);
+
+console.log(currentDate.getMonth(), currentDate.getDate());
 
 const CountDownTimer = ({open, ...props}) => {
     const [secondsDiffer, setSecondsDiffer] = useState(0);
@@ -20,7 +23,7 @@ const CountDownTimer = ({open, ...props}) => {
     useEffect(() => {
         const intervalId = setInterval(() => {
             const result = differenceInSeconds(
-                demoDayDate,
+                newYearDate,
                 new Date()
             );
             setSecondsDiffer(result);
@@ -33,12 +36,13 @@ const CountDownTimer = ({open, ...props}) => {
 
     return (
         <>
-            {secondsDiffer <= 0 &&
+            {/* Happy New Year */}
+            {(currentDate.getDate() === 1 && currentDate.getMonth() + 1 === 1) &&
                 <h3 className={styles.happyNewYearTitle}>
                     Happy New Year!
                 </h3>
             }
-            {(filteredDate && secondsDiffer > 0)&&
+            {(filteredDate && secondsDiffer > 0) &&
                 <div className={styles.countDownContainer}>
                     <div className={styles.countDownItem}>
                         <span className={styles.countDownItemValue}>{filteredDate.days}</span>
