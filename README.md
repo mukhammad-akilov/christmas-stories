@@ -1,9 +1,9 @@
 # Getting Started with Christmas Stories
 Welcome to Christmas Stories.
 
-![Christmas Stories light mode](./github/preview-light.png?raw=true "Christmas Stories")
+![Christmas Stories light mode](./.github/project-previews/preview-light.png?raw=true "Christmas Stories")
 
-![Christmas Stories dark mode](./github/preview-dark.png?raw=true "Christmas Stories")
+![Christmas Stories dark mode](./.github/project-previews/preview-dark.png?raw=true "Christmas Stories")
 
 I created a website for Christmas Stories where you can read some stories with nice background Christmas music (even on Apple Safari) and snow falling ❄️. 
 

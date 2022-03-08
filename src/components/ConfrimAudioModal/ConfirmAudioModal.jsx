@@ -1,7 +1,9 @@
+import React from "react";
 import styles from "./ConfirmAudioModal.module.scss";
 import PropTypes from 'prop-types';
 
 const ConfirmAudioModal = ({open, onClose, ...props}) => {
+    // console.log("audio modal render");
 
     return (
         <>
@@ -27,4 +29,4 @@ ConfirmAudioModal.propTypes = {
     onClose: PropTypes.func.isRequired
 }
 
-export default ConfirmAudioModal;
+export default React.memo(ConfirmAudioModal);
