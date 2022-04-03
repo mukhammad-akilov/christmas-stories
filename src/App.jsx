@@ -1,5 +1,5 @@
 // React
-import {useEffect, useState} from "react";
+import {useEffect, useState, useCallback} from "react";
 // React Router
 import {Route, Routes} from "react-router-dom";
 // Google Analytics
@@ -34,6 +34,11 @@ const App = () => {
 
     // Google Analytics
     ReactGA.initialize("G-XN8S38R7HZ");
+
+    // Memorize the function to reduce unnecessary component rerender
+    const setAcceptAudioModal = useCallback(() => {
+        setAcceptAudio(true);
+    }, [acceptAudio]);
 
     useEffect(() => {
         const theme = themeState.theme;
@@ -104,7 +109,7 @@ const App = () => {
               />
               <ConfirmAudioModal
                   open={!acceptAudio}
-                  onClose={() => setAcceptAudio(true)}
+                  onClose={setAcceptAudioModal}
               />
           </>
       );
