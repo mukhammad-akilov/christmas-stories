@@ -2,12 +2,11 @@ import {useState, useEffect} from "react";
 import {differenceInSeconds} from "date-fns";
 import styles from "./CountDownTimer.module.scss";
 
-const currentDate = new Date();
-const newYearDate= new Date(currentDate.getFullYear() + 1, 0, 0, 0, 0, 0);
-
-console.log(currentDate.getMonth(), currentDate.getDate());
 
 const CountDownTimer = ({open, ...props}) => {
+    const currentDate = new Date();
+    const newYearDate= new Date(currentDate.getFullYear() + 1, 0, 0, 0, 0, 0);
+
     const [secondsDiffer, setSecondsDiffer] = useState(0);
     const [filteredDate, setFilteredDate] = useState(null);
 

@@ -105,7 +105,7 @@ const App = () => {
                   <Footer />
               </div>
               <Snowfall
-              style={{zIndex: 5000}}
+                style={{zIndex: 5000}}
               />
               <ConfirmAudioModal
                   open={!acceptAudio}
