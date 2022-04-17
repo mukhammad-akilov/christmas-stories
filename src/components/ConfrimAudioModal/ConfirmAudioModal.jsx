@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 const ConfirmAudioModal = ({open, onClose, ...props}) => {
     // console.log("audio modal render");
-
     return (
         <>
             {open &&
