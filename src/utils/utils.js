@@ -507,8 +507,8 @@ export const christmasStoriesList = [
     },
     {
         id: 10,
-        title: "\"Niginella. The story about a girl who looks like Anna From Frozen\" by Tom Hardy",
-        slug: "niginella-the-story-about-a-girl-who-looks-like-anna-from-frozen-by-tom-hardy",
+        title: "\"Nutella. The story about a girl who looks like Anna From Frozen\" by Tom Hardy",
+        slug: "Nutella-the-story-about-a-girl-who-looks-like-anna-from-frozen-by-tom-hardy",
         content: <div className="lastChristmasStory">
             <p>
                 Once upon a time there is a girl called Nigella who lives in planet called Earth. She lives in a castle in
@@ -523,8 +523,8 @@ export const christmasStoriesList = [
                     autoplay
                 />
             </p>
-            <p>One day Niginella met a knight called Thomas Potter in kingdom market called FacebookBazar. Thomas was very pleased and encouraged to
-                see Niginella and asked for her profile in FacebookBazar. After that, they talked every day until nightfall and planned to eat pizza.
+            <p>One day Nutella met a knight called Thomas Potter in kingdom market called FacebookBazar. Thomas was very pleased and encouraged to
+                see Nutella and asked for her profile in FacebookBazar. After that, they talked every day until nightfall and planned to eat pizza.
                 They met each other and ate delicious pizza. After a delicious pizza, they agreed to go to the festival called MegaKingdom Festival.
             </p>
             <h2 className="subTitle">MegaKingdom Festival</h2>
@@ -538,8 +538,8 @@ export const christmasStoriesList = [
                 />
             </p>
             <p>
-                At the festival, Niginella invited her friends and successfully entered the festival through the security guards. There was a lot of delicious food at the festival, a lot of great songs. Niginella and Thomas danced to the cool music until the night.
-                After the festival, Niginella and Thomas agreed to eat delicious and juicy wings and watch a movie called Knight 007.
+                At the festival, Nutella invited her friends and successfully entered the festival through the security guards. There was a lot of delicious food at the festival, a lot of great songs. Nutella and Thomas danced to the cool music until the night.
+                After the festival, Nutella and Thomas agreed to eat delicious and juicy wings and watch a movie called Knight 007.
             </p>
             <h2 className="subTitle">Bad dragon</h2>
             <p className="animationContainer">
@@ -552,7 +552,7 @@ export const christmasStoriesList = [
                 />
             </p>
             <p>
-                Very bad things happened after a cool festival. The bad dragon kidnapped Niginella and took her to his castle. Then Thomas  shouted at the dragon:
+                Very bad things happened after a cool festival. The bad dragon kidnapped Nutella and took her to his castle. Then Thomas  shouted at the dragon:
             </p>
             <div className="textCenter mb-3">
                 <p className="princeWarning">
@@ -564,7 +564,7 @@ export const christmasStoriesList = [
                 </p>
             </div>
             <p>
-                Thomas finally found the bad dragon and defeated him. Niginella was suuccessfully saved and now she can be with her family in New Year.
+                Thomas finally found the bad dragon and defeated him. Nutella was suuccessfully saved and now she can be with her family in New Year.
             </p>
             <p>
                 Thomas looked into her beautiful eyes and he was happy he could save her from the dragon.
@@ -574,7 +574,7 @@ export const christmasStoriesList = [
             </h2>
             <p>
                 There is the morning of the last day of 2021 year. On New Year's Eve, everyone eats dishes and salads, so everyone should wake up early and prepare for evening.
-                Finally Niginella waked up and ...
+                Finally Nutella waked up and ...
             </p>
             <h2>
                 31 December 2021
