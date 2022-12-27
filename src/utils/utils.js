@@ -511,7 +511,7 @@ export const christmasStoriesList = [
         slug: "nutella-the-story-about-a-girl-who-looks-like-anna-from-frozen-by-tom-hardy",
         content: <div className="lastChristmasStory">
             <p>
-                Once upon a time there is a girl called Nigella who lives in planet called Earth. She lives in a castle in
+                Once upon a time there is a girl called Nutella who lives in planet called Earth. She lives in a castle in
                 4th floor and like others princess she likes to listen to music, watch kingdom movies, dancing and double decker red bus.
             </p>
             <p className="animationContainer">
