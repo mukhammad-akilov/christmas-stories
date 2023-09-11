@@ -29,8 +29,8 @@ const DeviceInfoPrivacyPolicy = () => {
       </p>
       <p>
         The terms used in this Privacy Policy have the same meanings as in our
-        Terms and Conditions, which is accessible at 101 Иншо unless otherwise
-        defined in this Privacy Policy.
+        Terms and Conditions, which is accessible at Device Info unless
+        otherwise defined in this Privacy Policy.
       </p>
       <h3>Information Collection and Use</h3>
       <p>
