@@ -25,6 +25,7 @@ import ChristmasStoryRoute from "./routes/christmas-story";
 import HomeRoute from "./routes/home";
 import NotFoundRoute from "./routes/not-found";
 import DeviceInfoPrivacyPolicyRoute from "./routes/apps/DeviceInfoPrivacyPolicy";
+import LearnPrayingPrivacyPolicy from "./components/LearnPrayingPrivacyPolicy/DeviceInfoPrivacyPolicy";
 
 let christmasSoundHowler = null;
 
@@ -109,6 +110,10 @@ const App = () => {
             <Route
               path="/apps/device-info-privacy-policy"
               element={<DeviceInfoPrivacyPolicyRoute />}
+            />
+              <Route
+              path="/apps/learn-praying-privacy-policy"
+              element={<LearnPrayingPrivacyPolicy />}
             />
             <Route path="*" element={<NotFoundRoute />} />
           </Routes>
