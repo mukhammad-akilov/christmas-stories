@@ -17,17 +17,17 @@ import Layout from "./components/Layout/Layout";
 import Snowfall from "react-snowfall";
 import ConfirmAudioModal from "./components/ConfrimAudioModal/ConfirmAudioModal";
 // Howler
-import christmasMusic from "./assets/music/christmas.mp3";
+import newYearMusic from "./assets/music/new-year.mp3";
 import { Howl } from "howler";
 // Routes
-import ChristmasStoriesRoute from "./routes/christmas-stories";
-import ChristmasStoryRoute from "./routes/christmas-story";
+import NewyearStoriesRoute from "./routes/new-year-stories";
+import NewYearStoryRoute from "./routes/new-year-story";
 import HomeRoute from "./routes/home";
 import NotFoundRoute from "./routes/not-found";
 import DeviceInfoPrivacyPolicyRoute from "./routes/apps/DeviceInfoPrivacyPolicy";
 import LearnPrayingPrivacyPolicy from "./components/LearnPrayingPrivacyPolicy/DeviceInfoPrivacyPolicy";
 
-let christmasSoundHowler = null;
+let newYearSoundHowler = null;
 
 const App = () => {
   const themeState = useSelector((state) => state.theme);
@@ -69,26 +69,26 @@ const App = () => {
 
   useEffect(() => {
     // Setup the new Howl
-    christmasSoundHowler = new Howl({
-      src: [christmasMusic],
+    newYearSoundHowler = new Howl({
+      src: [newYearMusic],
       loop: true,
       onplayerror: () => {
-        christmasSoundHowler.once("unlock", function () {
-          christmasSoundHowler.play();
+        newYearSoundHowler.once("unlock", function () {
+          newYearSoundHowler.play();
         });
       },
     });
 
-    christmasSoundHowler.play();
+    newYearSoundHowler.play();
   }, []);
 
   useEffect(() => {
     if (!musicState.play) {
       // Mute the sound
-      christmasSoundHowler.mute(true);
+      newYearSoundHowler.mute(true);
     } else {
       // Play the sound
-      christmasSoundHowler.mute(false);
+      newYearSoundHowler.mute(false);
     }
   }, [musicState.play]);
 
@@ -100,12 +100,12 @@ const App = () => {
           <Routes>
             <Route path="/" element={<HomeRoute />} />
             <Route
-              path="/christmas-stories"
-              element={<ChristmasStoriesRoute />}
+              path="/new-year-stories"
+              element={<NewyearStoriesRoute />}
             />
             <Route
-              path="/christmas-stories/:christmasStorySlug"
-              element={<ChristmasStoryRoute />}
+              path="/new-year-stories/:newYearStorySlug"
+              element={<NewYearStoryRoute />}
             />
             <Route
               path="/apps/device-info-privacy-policy"

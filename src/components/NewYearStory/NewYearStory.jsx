@@ -1,18 +1,18 @@
 import {useState, useEffect} from "react";
 import {useNavigate} from "react-router-dom";
 import PropTypes from 'prop-types';
-import styles from "./ChristmasStory.module.scss";
-import {christmasStoriesList} from "../../utils/utils";
+import styles from "./NewYearStory.module.scss"
+import {NEW_YEAR_STORIES_LIST} from "../../utils/utils";
 import {projectTitle} from "../../config";
 
-const ChristmasStory = ({storySlug, ...props}) => {
+const NewYearStory = ({storySlug, ...props}) => {
     const [selectedStory, setSelectedStory] = useState(null);
     const navigate = useNavigate();
 
     useEffect(() => {
         // Scroll to top of page
         window.scrollTo(0, 0);
-        const [filteredStory] = christmasStoriesList.filter(story => story.slug === storySlug);
+        const [filteredStory] = NEW_YEAR_STORIES_LIST.filter(story => story.slug === storySlug);
         if (filteredStory) {
             setSelectedStory(filteredStory);
             // Set page title
@@ -27,7 +27,7 @@ const ChristmasStory = ({storySlug, ...props}) => {
         <>
             {selectedStory &&
                 <div className={`container ${styles.contentContainer}`}>
-                    <h1 className={`christmasFont ${styles.title}`}>{selectedStory.title}</h1>
+                    <h1 className={`newyearFont ${styles.title}`}>{selectedStory.title}</h1>
                     <div className={styles.descriptionContainer}>
                         {selectedStory.content}
                     </div>
@@ -37,8 +37,8 @@ const ChristmasStory = ({storySlug, ...props}) => {
     );
 }
 
-ChristmasStory.propTypes = {
+NewYearStory.propTypes = {
     storySlug: PropTypes.string.isRequired
 }
 
-export default ChristmasStory;
+export default NewYearStory;

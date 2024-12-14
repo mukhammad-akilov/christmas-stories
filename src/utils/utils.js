@@ -9,7 +9,7 @@ import story8Thumbnail from "../assets/images/story-8.jpg";
 import story9Thumbnail from "../assets/images/story-9.jpg";
 import story10Thumbnail from "../assets/images/story-10.jpg";
 
-export const christmasStoriesList = [
+export const NEW_YEAR_STORIES_LIST = [
     {
         id: 1,
         title: "\"The Gift of the Magi\" by O. Henry",
@@ -509,7 +509,7 @@ export const christmasStoriesList = [
         id: 10,
         title: "\"Nutella. The story about a girl who looks like Anna From Frozen\" by Tom Hardy",
         slug: "nutella-the-story-about-a-girl-who-looks-like-anna-from-frozen-by-tom-hardy",
-        content: <div className="lastChristmasStory">
+        content: <div className="lastNewYearStory">
             <p>
                 Once upon a time there is a girl called Nutella who lives in planet called Earth. She lives in a castle in
                 4th floor and like others princess she likes to listen to music, watch kingdom movies, dancing and double decker red bus.
@@ -588,7 +588,7 @@ export const christmasStoriesList = [
             <p className="textCenter toBeContinued">
                 THE END
                 <br/>
-                There is not any Christmas without this music :)
+                There is not any New Year without this music :)
             </p>
             <div className="video-container">
                 <iframe

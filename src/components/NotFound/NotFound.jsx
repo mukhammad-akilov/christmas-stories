@@ -3,7 +3,6 @@ import {useEffect} from "react";
 // Redux
 import {useSelector} from "react-redux";
 import notFoundImage from "../../assets/images/not-found.png";
-import {Link} from "react-router-dom";
 import styles from "./NotFound.module.scss";
 import {projectTitle} from "../../config";
 
@@ -17,7 +16,7 @@ const NotFound = () => {
 
     return (
         <div className={`container ${styles.contentContainer}`}>
-            <h1 className={`christmasFont ${styles.title}`}>Page 404</h1>
+            <h1 className={`newyearFont ${styles.title}`}>Page 404</h1>
             <img
                 src={notFoundImage}
                 alt={projectTitle}

@@ -6,8 +6,9 @@ import {useSelector} from "react-redux";
 import ThemeToggler from "../ThemeToggler/ThemeToggler";
 import MusicMuteHandler from "../MusicMuteHandler/MusicMuteHandler";
 // Assets
-import christmasLogoPng from "../../assets/images/logo.png"
-import christmasLogoWebP from "../../assets/images/logo.webp"
+import newYearLogoPng from "../../assets/images/logo.png"
+//TODO add webp lgo
+import newYearLogoWebP from "../../assets/images/logo.png"
 import {projectTitle} from "../../config";
 // Styles
 import styles from "./Header.module.scss"
@@ -41,9 +42,9 @@ const Header = () => {
                     className={styles.logoContainer}
                 >
                     <picture>
-                        <source srcSet={christmasLogoWebP} type="image/webp" />
-                        <source srcSet={christmasLogoPng} type="image/png" />
-                        <img src={christmasLogoPng} alt={projectTitle} />
+                        <source srcSet={newYearLogoWebP} type="image/webp" />
+                        <source srcSet={newYearLogoPng} type="image/png" />
+                        <img src={newYearLogoPng} alt={projectTitle} />
                     </picture>
                 </Link>
                 <div className={styles.settingsContainer}>

@@ -11,8 +11,8 @@ const Home = () => {
     }, [])
     return (
         <div className={`container ${styles.contentContainer}`}>
-            <h1 className={`christmasFont ${styles.title}`}>Christmas Stories</h1>
-            <div className={styles.christmasTreeContainer}>
+            <h1 className={`newyearFont ${styles.title}`}>New Year Stories</h1>
+            <div className={styles.newYearTreeContainer}>
                 <lottie-player
                     src="https://assets2.lottiefiles.com/packages/lf20_9gmlwgi8.json"
                     background="transparent"
@@ -22,12 +22,12 @@ const Home = () => {
                 />
             </div>
             <div className={styles.counterContainer}>
-                <h2 className={`christmasFont ${styles.title}`}>Time left until The New Year</h2>
+                <h2 className={`newyearFont ${styles.title}`}>Time left until The New Year</h2>
                 <CountDownTimer />
             </div>
             <div className={styles.introDescriptionContainer}>
-                <h2 className={`${styles.title}`}>Dou you really want some Christmas Stories? 🎅🏽</h2>
-                <Link to="/christmas-stories" className={styles.linkToStories}>Let's read the stories!</Link>
+                <h2 className={`${styles.title}`}>Dou you really want some New Year Stories? 🎅🏽</h2>
+                <Link to="/new-year-stories" className={styles.linkToStories}>Let's read the stories!</Link>
             </div>
         </div>
     )

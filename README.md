@@ -1,11 +1,11 @@
-# Getting Started with Christmas Stories
-Welcome to Christmas Stories.
+# Getting Started with New Year Stories
+Welcome to New Year Stories.
 
-![Christmas Stories light mode](./.github/project-previews/preview-light.png?raw=true "Christmas Stories")
+![New Year Stories light mode](./.github/project-previews/preview-light.png?raw=true "New Year Stories")
 
-![Christmas Stories dark mode](./.github/project-previews/preview-dark.png?raw=true "Christmas Stories")
+![New Year Stories dark mode](./.github/project-previews/preview-dark.png?raw=true "New Year Stories")
 
-I created a website for Christmas Stories where you can read some stories with nice background Christmas music (even on Apple Safari) and snow falling ❄️. 
+I created a website for New Year Stories where you can read some stories with nice background New Year music (even on Apple Safari) and snow falling ❄️. 
 
 UX and UI was created by me. Feel free to visit and give me some feedback :)
 Technologies used for website: React, SPA, Redux, Light/Dark mode, CSS-modules, LottieFiles animations, snow falling, SCSS, React Router V6, responisve design and other funny tools 🎸🎸🎸
@@ -13,7 +13,7 @@ Technologies used for website: React, SPA, Redux, Light/Dark mode, CSS-modules, 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # The website link
-Feel free to visit the website [https://christmas-stories.vercel.app](https://christmas-stories.vercel.app)
+Feel free to visit the website [https://new-year-stories.vercel.app](https://new-year-stories.vercel.app)
 
 ## Available Scripts
 
